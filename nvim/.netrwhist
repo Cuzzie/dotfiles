@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/media/cuzzie/7E02B64102B5FE69/Development/full-stack-app/server'
+let g:netrw_dirhist_2='/media/cuzzie/7E02B64102B5FE69/Development/full-stack-app/server/src'
+let g:netrw_dirhist_3='/home/cuzzie/.vim/my-snippets/Ultisnips'
+let g:netrw_dirhist_4='/home/cuzzie/.vim/my-snippets'
+let g:netrw_dirhist_5='/home/cuzzie/.vim'
