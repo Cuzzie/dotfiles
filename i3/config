@@ -216,3 +216,5 @@ exec udisksctl mount -b /dev/sdb1
 # Auto set keyboard repeat delay
 exec xset r rate 200 60
 
+# Auto connect to wifi
+exec nmcli dev wifi connect LEE\ KEL\ WIN@unifi

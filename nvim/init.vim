@@ -18,16 +18,20 @@ Plug 'suy/vim-context-commentstring'
 Plug 'junegunn/vim-peekaboo'
 Plug 'SirVer/ultisnips'
 Plug 'mattn/emmet-vim'
+Plug 'sheerun/vim-polyglot'
+Plug 'joshdick/onedark.vim'
+Plug 'itchyny/lightline.vim'
 call plug#end()
 
 set termguicolors
 set background=dark
 let g:edge_style = 'neon'
-colorscheme edge
+colorscheme onedark
 
 let g:airline_theme='onedark'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter='unique_tail'
+let g:onedark_terminal_italics=1
 set encoding=utf-8
 set t_Co=256
 
@@ -64,7 +68,7 @@ nnoremap gh :w<CR>
 nnoremap <A-TAB> :bn<CR>
 
 " To format whole document
-nnoremap <Leader>= mmgg=G`m_
+" nnoremap <Leader>= mmgg=G`m_
 
 " To replace text
 nnoremap <Leader>s :s///g<Left><Left><Left>
@@ -91,6 +95,7 @@ nmap <silent> <Leader>gd <Plug>(coc-definition)
 nmap <silent> <Leader>gr <Plug>(coc-references)
 nmap <silent> <Leader>rn <Plug>(coc-rename)
 nmap <silent> <Leader>gi <Plug>(coc-implementation)
+nmap <silent> <Leader>= <Plug>(coc-format-selected)
 
 set nu
 set rnu
@@ -100,9 +105,9 @@ set expandtab
 set incsearch
 set nohlsearch
 set updatetime=300
-set showtabline=2
 set laststatus=2
 set smartindent
+set showtabline=2
 set autoindent
 set splitbelow
 set splitright
@@ -112,6 +117,8 @@ set wrap
 set linebreak
 set nolist
 set nojoinspaces
+set autochdir
+set inccommand=nosplit
 
 filetype on
 filetype plugin on
